@@ -23,14 +23,14 @@ html {
 .img-left{
   float:right;
   margin:10px 0 10px 20px;
-  border 1px solid #c0c0c0;
+  border:1px solid #c0c0c0;
   padding:spx;
 }
 
 .img-right{
   float:right;
   margin:10px 0 10px 20px;
-  border 1px solid #c0c0c0;
+  border:1px solid #c0c0c0;
   padding:spx;
 }
 
