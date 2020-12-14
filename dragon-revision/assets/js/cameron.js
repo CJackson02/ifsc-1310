@@ -1,15 +1,32 @@
-$(document).ready(function () {
+function bigImg(x) {
+       x.style.fontSize = "40px";
+      
+    }
 
-  $('.first-button').on('click', function () {
+      function normalImg(x) {
+       x.style.fontSize = "25px";
+     
+  
+    }
 
-    $('.animated-icon1').toggleClass('open');
-  });
-  $('.second-button').on('click', function () {
+function bigImg1(x) {
+       x.style.fontSize = "55px";
+      
+    }
 
-    $('.animated-icon2').toggleClass('open');
-  });
-  $('.third-button').on('click', function () {
+      function normalImg1(x) {
+       x.style.fontSize = "40px";
+     
+  
+    }
 
-    $('.animated-icon3').toggleClass('open');
-  });
-});
+function bigImg3(x) {
+       x.style.fontSize = "65px";
+      
+    }
+
+      function normalImg3(x) {
+       x.style.fontSize = "50px";
+     
+  
+    }

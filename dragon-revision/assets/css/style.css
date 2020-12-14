@@ -1,476 +1,154 @@
-/* Color Theme  
- #53616B
- #1B2C38
- #181C1F - Base
- #33536B
- #8EA6B8
-*/
-/* ---------------Box Sizing----------------- */
-
 html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
+  background: url(../img/Launch.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;  
 }
 
-/* ----- Utility Styles ---- */
-
-.container {
-  width: 80vw;
-  margin: 40px auto;
-  max-width: 900px;
+img:hover{
+  box-shadow: 2px 2px 1px white, 2px -2px 1px white, -2px 2px 1px white, -2px -2px 1px white, 5px 1px 8px #510AAF, 1px 5px 8px #510AAF, -5px 1px 8px #510AAF, 1px -5px 8px #510AAF;
 }
 
-.img-right {
-  float: right;
-  margin: 10px 0 10px 20px;
-  border: 1px solid pink;
-  padding: 5px;
+a:hover {
+  text-shadow: 2px 2px 1px white, 2px -2px 1px white, -2px 2px 1px white, -2px -2px 1px white, 5px 1px 8px #510AAF, 1px 5px 8px #510AAF, -5px 1px 8px #510AAF, 1px -5px 8px #510AAF;
 }
 
-.img-left {
-  float: left;
-  margin: 10px 20px 10px 0;
-  border: 1px solid pink;
-  padding: 5px;
+.nav-link{
+	font-size:25px;
 }
 
-.img-center {
-  display: block;
-  margin: 20px auto;
-  border: 1px solid none;
-  padding: 5px;
-}
-
-/* ---- Responsive Images ----*/
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/* ----- Global Styles ---- */
-
-body {
-  font-family: "Lato", sans-serif;
-  margin: 0;
-}
-
-/* ------ Header ------- */
-
-header.primary {
-  background-color: #181c1F;
-  text-align: center;
-  color:#ffffff;
-  text-shadow: 2px 2px #000000;
-  /* Shorhand T,R,B,L*/
-  padding: 6em 2em;
-  position: relative;
-}
-
-header.primary::before {
-  content: "";
-  background-image: url("https://assets.codepen.io/7248/dragon-in-space.jpg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.4;
-}
-
-header.primary h1 {
-  font-size: 3.2rem;
-  margin: 20px 0;
-  position: relative;
-  color:#ffffff;
-}
-
-header.primary h1 a {
-  color:#ffffff;
-  background-image: url("https://assets.codepen.io/7248/logo-2.png");
-  display: block;
-  width: 450px;
-  height: 70px;
-  margin: 0 auto;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-header.primary h2 {
-  font-family: "Goldman", cursive;
-  font-size: 2em;
-  /* Shorhand Three Value Top, Left/Right, Bottom*/
-  margin: 20px auto 40px;
-  position: relative;
-}
-header.primary nav ul {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 0;
-  max-width: 900px;
-  margin: 20px auto;
-}
-
-header.primary nav li {
-  list-style-type: none;
-  padding: 0;
-  width: 20%;
-}
-
-header.primary nav a:link,
-header.primary nav a:visited {
+title {
+  Impact: fantasy;
+  font-size: 100px;
+  letter-spacing: 5px;
+  word-spacing: 20px;
   color: white;
-  text-decoration: none;
-  background-color: #000000;
-  background-color: rgba(142, 166, 184, 0.4);
-  padding: 8px 16px;
-  border-radius: 10px;
-  transition: 0.6s;
-  display: block;
-}
-
-header.primary nav a:hover,
-header.primary nav a:active {
-  background-color: rgba(51, 83, 107, 0.8);
-}
-
-
-/* ------------- Content --------------- */
-
-section#content {
-  padding: 4em 0;
-}
-
-section#content h3{
-  font-family: "Goldman", cursive;
-  font-size: 1.2em;
-  color: #33536b;
-  border-bottom: 1px solid #c0c0c0;
-}
-
-section#content table{
-  width:100%;
-  border: 1px solid #c0c0c0;
-  border-collapse:collapse;
-}
-
-section#content caption{
-  font-weight:bold;
-  font-size:1.5rem;
-  margin:10px;
-  font-family: "Goldman", cursive;
-  font-size: 2em;
-  color: #33536b;
-}
-
-section#content th {
-  background:#181c1f;
-  color:#ffffff;
-  text-align:left;
-  padding:10px;
-}
-
-section#content td{
-  border:1px solid #c0c0c0;
-  padding:5px;
-}
-
-section#content tr:nth-child(even){
-  background:yellow ;
-}
-
-section#content tr:hover{
-  background:#8ea68b;
-}
-
-/* ------------- Articles --------------- */
-/*------Huge middle section of content--------*/
-
-section#articles {
-  background:black;
-}
-
-section#articles .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap:wrap;
-  border-bottom: 1px solid yellow;
-  padding: 0 0 4em 0;
-}
-/*----first private spaceship etcc..*/
-
-section#articles h2,
-#content h2 {
-  flex: 0 0 100%;
-  color:yellow;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #510AAF, 1px 2px 0 #510AAF, 0 3px 0 #510AAF, 1px 4px 2px #000000, 1px 5px 2px #000000, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15), 3px 3px 0px rgba(253,255,222,0);
+  display: grid;
   text-align: center;
-  font-family: "Goldman", cursive;
-  font-size: 3em;
-  background:#808080;
+  margin: 0px;
+  padding: 10px 0px 30px 0px;
+  background-color: rgba(260,260,260, 0.4);
+  border-radius: 25%;
  
 }
-/*----The word configurations---*/
-section#articles h2 {
-  color:black;
-  text-shadow: 3px 3px yellow;
-}
-/*----rows under the word configurations---*/
-#articles article.post {
-  width: 30%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  padding: 10px;
-  transition: 0.6s;
-  font-size: 0.8rem;
-  border-radius: 10px;
-  background:#808080;
+
+#nav-bar{
+ display: flex;
+ align-items: justify-content;
+ justify-content: center;
+ padding: 10px 10px 10px 10px;
 }
 
-#articles article.post h2 {
-  font-size: 1.5em;
-  text-shadow:yellow;
-}
-
-#articles article.post:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-}
-
-#articles article time,
-#articles article figcaption,
-#articles article footer {
-  font-size: 0.8em;
-  color:#c0c0c0;
-  text-transform: uppercase;
-}
-
-#articles .post a:link,
-#articles .post a:visited {
-  color:black;
-}
-
-#articles .post figure {
-  margin: 0;
-}
-
-#articles .post img {
-  border-radius: 10px;
-}
-
-#articles ul {
-  padding: 0 20px;
-}
-#articles li {
-  margin-bottom: 20px;
-}
-/* ------------- Hero --------------- */
-
-#hero {
-  padding: 4em 0;
-}
-
-
-/* ------------- Aside --------------- */
-
-/* Attribute Selector */
-aside[role="complementary"] {
-  background-color:Black;
-  color:yellow;
-  padding: 2.5em;
-  text-shadow:1px 1px black;
-}
-
-aside .container {
+a{
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: black;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-aside article.widget {
-  width: 40%;
-}
-
-.widget.overview table {
-  font-size: 0.7em;
-  border-collapse: collapse;
-}
-
-.widget.overview table td {
-  border-bottom: 1px solid #fff;
-  padding: 10px;
-}
-
-.widget.overview table td:nth-child(even) {
-  text-align: right;
-}
-
-aside article a:link,
-aside article a:visited {
-  color:#ffffff;
-  display: block;
-  margin-top: 1.2em;
-  letter-spacing: 1.2px;
-}
-
-aside article a:hover,
-aside article a:active {
+  text-align: center;
   text-decoration: none;
+  margin: 20px;
+  padding: 10px 5px 5px 5px;
 }
 
-aside article footer {
-  display: none;
-}
-
-/*----footer----*/
-
-footer#colophon {
-  background-color: #1b2c38;
-}
-
-#colophon h6 {
+#Home{
+  display: grid;
+  text-align: center;
+  margin: 20px;
   padding: 20px;
-  margin: 0;
-  color: #fff;
+}
+
+li{
+  list-style-type: none;
+  display: inli;
+}
+
+.history{
+  display: grid;
   text-align: center;
-  font-size: 0.9rem;
-  text-transform: uppercase;
 }
 
-#colophon h6 a:link,
-#colophon h6 a:visited {
-  color: #fff;
-}
-/* Icon 1 */
-
-.animated-icon1, .animated-icon2, .animated-icon3 {
-width: 30px;
-height: 20px;
-position: relative;
-margin: 0px;
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: .5s ease-in-out;
--moz-transition: .5s ease-in-out;
--o-transition: .5s ease-in-out;
-transition: .5s ease-in-out;
-cursor: pointer;
+h1{
+  Impact: fantasy;
+  font-size: 350%;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #510AAF, 1px 2px 0 #510AAF, 1px 2px 0 #510AAF, 1px 2px 3px #000000, 1px 2px 3px #000000;
+  display: grid;
+  text-align: center;
+  border: 10px dotted black;
+  border-width: 10px 0px 0px 0px;
+  bordr-opacity: 70%;
+  padding: 20px;  
 }
 
-.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
-display: block;
-position: absolute;
-height: 3px;
-width: 100%;
-border-radius: 9px;
-opacity: 1;
-left: 0;
--webkit-transform: rotate(0deg);
--moz-transform: rotate(0deg);
--o-transform: rotate(0deg);
-transform: rotate(0deg);
--webkit-transition: .25s ease-in-out;
--moz-transition: .25s ease-in-out;
--o-transition: .25s ease-in-out;
-transition: .25s ease-in-out;
+h2{
+  Impact: fantasy;
+  font-size: 40px;
+  letter-spacing: 4px;
+  word-spacing: 20px;
+  color: white;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #510AAF, 1px 2px 0 #510AAF, 1px 2px 0 #510AAF, 1px 2px 3px #000000, 1px 2px 3px #000000;
+  display: grid;
+  text-align: center;
+  border: 10px dotted black;
+  border-width: 10px 0px 0px 0px;
+  bordr-opacity: 70%;
+  padding: 20px;  
 }
 
-.animated-icon1 span {
-background: #e65100;
-}
-
-.animated-icon2 span {
-background: #e3f2fd;
-}
-
-.animated-icon3 span {
-background: #f3e5f5;
-}
-
-.animated-icon1 span:nth-child(1) {
-top: 0px;
-}
-
-.animated-icon1 span:nth-child(2) {
-top: 10px;
-}
-
-.animated-icon1 span:nth-child(3) {
-top: 20px;
-}
-
-.animated-icon1.open span:nth-child(1) {
-top: 11px;
--webkit-transform: rotate(135deg);
--moz-transform: rotate(135deg);
--o-transform: rotate(135deg);
-transform: rotate(135deg);
-}
-
-.animated-icon1.open span:nth-child(2) {
-opacity: 0;
-left: -60px;
-}
-
-.animated-icon1.open span:nth-child(3) {
-top: 11px;
--webkit-transform: rotate(-135deg);
--moz-transform: rotate(-135deg);
--o-transform: rotate(-135deg);
-transform: rotate(-135deg);
+p{
+  Impact: fantasy;
+  color: black;
+  font-size: 30px;
+  text-shadow: 1px 1px 1.5px gray;
+  text-decoration: none;
+  margin: 5px;
+  padding: 10px 5px 5px 10px;
 }
 
 
 
-/* ---------------Media Queries----------------- */
 
-@media screen and (max-width: 600px) {
- 
- 
-  header.primary nav ul {
-    flex-direction: column;
-    margin: 0 auto;
-    width: 400px;
-  }
+.rocket-img{
+  margin: 10px 10px 10px 10px;
+  width: 120px;
+  height: 120px;
+  border-radius: 25%;
+}
 
-  header.primary nav ul li {
-    margin-bottom: 10px;
-    width: 400px;
-  }
 
-  header.primary nav ul li a {
-    display: block;
-  }
+#background {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+}
 
-  section#articles .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    border-bottom: 1px solid #c0c0c0;
-    padding: 0 0 4em 0;
-  }
 
-  #articles article.post {
-    width: 100%;
-    margin-bottom: 2em;
-  }
+.background{
+  background-color: rgba(260,260,260, 0.4);
+  border-radius: 05%;
+}
 
-aside .container {
+#Contact {
+  //display: grid;
+  text-align: center;
+  margin:0px;
+  padding: 0px;
+}
+
+.professional{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
- 
-  aside article.widget {
-  width: 100%;
+  align-items: justify-content;
+  justify-content: center;
+  list-style-type: none;  
 }
 
+#pro-link{
+  height: 75px;
+  border-radius: 20%;
 }
